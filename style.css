@@ -48,3 +48,32 @@ h1, h2 {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Немного эффекта при наведении */
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Адаптив: на маленьких экранах */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
