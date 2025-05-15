@@ -115,3 +115,35 @@ h1, h2 {
   padding: 10px 20px;
   font-size: 18px;
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  main, section {
+    padding: 20px 10px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+  }
+}
