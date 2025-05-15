@@ -91,5 +91,47 @@
     </form>
   </div>
 
+<script>
+  document.getElementById("booking-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const token = "7915054367:AAFRq4pDJfjqvmyXuPAa9wD4Ob0HJLgqxUA";
+    const chat_id = "663881727";
+
+    const name = document.getElementById("name").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const message = document.getElementById("message").value;
+
+    const text = `
+💅 <b>Новая запись на маникюр</b>
+👤 Имя: ${name}
+📋 Услуга: ${service}
+📅 Дата: ${date}
+📝 Комментарий: ${message || "Без комментариев"}
+    `;
+
+    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: chat_id,
+        text: text,
+        parse_mode: "HTML",
+      }),
+    })
+    .then(() => {
+      alert("Заявка отправлена! 💖 Мы скоро с вами свяжемся.");
+      document.getElementById("booking-form").reset();
+    })
+    .catch((error) => {
+      alert("Произошла ошибка. Попробуйте позже.");
+      console.error("Ошибка Telegram:", error);
+    });
+  });
+</script>
+  
 </body>
 </html>
