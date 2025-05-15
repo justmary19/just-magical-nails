@@ -63,27 +63,31 @@
 <body>
 
   <div class="form-container">
-    <h2>Записаться на маникюр</h2>
+    <h2>Записаться на маникюр (Book a manicure appointment)</h2>
     <form id="booking-form">
-      <label for="name">Имя</label>
+      <label for="name">Имя (Name)</label>
       <input type="text" id="name" name="name" required />
 
-      <label for="service">Услуга</label>
+      <label for="service">Услуга (Service)</label>
       <select id="service" name="service" required>
-        <option value="">Выберите услугу</option>
-        <option value="Наращивание + комбинированный маникюр">Наращивание + комбинированный маникюр</option>
-        <option value="Классический маникюр">Классический маникюр</option>
-        <option value="Комбинированный + покрытие гель-лаком">Комбинированный + гель-лак</option>
-        <option value="Аппаратный маникюр + гель-лак">Аппаратный маникюр + гель-лак</option>
+        <option value="">Выберите услугу (Select a service)</option>
+        <option value="Наращивание на верхние формы + комбинированный маникюр + гель лак">Наращивание на верхние формы + комбинированный маникюр + гель лак (Extension + combined manicure +gel polish)</option>
+        <option value="Наращивание на типсы + комбинированы маникюр + гелт лак">Наращивание на типсы + комбинированы маникюр + гель лак (Extension on tips + combined manicure + gel polish)</option>
+        <option value="Классический маникюр">Классический маникюр (Classic manicure)</option>
+        <option value="Комбинированный маникюр + покрытие гель-лаком">Комбинированный маникюр + гель-лак (Combined manicure + gel polish)</option>
+        <option value="Аппаратный маникюр + гель-лак">Аппаратный маникюр + гель-лак (Hardware manicure + gel polish)</option>
+        <option value="Укрепление + комбинированы маникюр">Укрепление + комбинированый маникюр (Strengthening + combined manicure)</option>
+        <option value="Комбинированы маникюр + укрепление + гель лак">Комбинированы маникюр + укрепление + гель лак (Combined manicure + strengthening + gel polish)</option>
+        <option value="Аппаратный маникюр + укрепление + гель лак">Аппаратный маникюр + укрепление + гель лак (Hardware manicure + strengthening + gel polish)</option>
       </select>
 
-      <label for="date">Дата</label>
+      <label for="date">Дата (Date)</label>
       <input type="date" id="date" name="date" required />
 
-      <label for="message">Комментарий</label>
+      <label for="message">Комментарий (Comment)</label>
       <textarea id="message" name="message" rows="4"></textarea>
 
-      <button type="submit">Отправить</button>
+      <button type="submit">Отправить (Send)</button>
     </form>
   </div>
 
