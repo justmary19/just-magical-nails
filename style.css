@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #000000;
-  color: #e75480;
+  color: #FFFFFF;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 }
 
 header nav a {
-  color: #FFFFFF;
+  color: #e75480;
   text-decoration: none;
   margin: 0 20px;
   font-size: 18px;
