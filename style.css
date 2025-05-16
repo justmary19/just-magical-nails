@@ -1,8 +1,13 @@
-body {
+html, body {
+  height: auto !important;
+  overflow-y: auto !important;
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #000000;
   color: #FFFFFF;
+}
+body {
+  overflow-y: scroll;
 }
 
 header {
