@@ -98,12 +98,14 @@
   e.preventDefault();
 
   const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
   const service = document.getElementById("service").value;
   const date = document.getElementById("date").value;
   const message = document.getElementById("message").value;
 
   const data = {
     name,
+    phone,
     service,
     date,
     message
